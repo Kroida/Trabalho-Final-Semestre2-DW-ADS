@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearthz/buy-product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/responsive.css">
+    <script src="src/js/bootstrap.min.js"></script>
+
+    <!-- Bloco de estilo para modificar apenas este arquivo, assim poupando linhas no css e classes inúteis no HTML -->
+    <style>
+        header {
+            box-shadow: 0 0 8px 5px #f70813;
+        }
+
+        header .menu img {
+            border: #f70813 1px inset;
+        }
+
+        header .menu a,
+        .comprarProdutoForms h1,
+        .comprarProdutoFormsContainer label {
+            color: #f70813;
+        }
+
+        header .menu a:hover {
+            color: #fde0da;
+        }
+
+        footer {
+            border-top: 1px solid rgba(247, 8, 19, 0.2);
+        }
+
+        footer .logo-wrapper:hover {
+            box-shadow: 0 5px 15px rgba(247, 8, 19, 0.2);
+        }
+
+        .comprarProdutoForms {
+            background-image: linear-gradient(147deg, #f70813 -100%, #3c3f41 50%, #272727 100%, #414547 100%);
+        }
+
+        .comprarProdutoFormsContainer {
+            box-shadow: 0 0 20px rgba(247, 8, 19, 0.2);
+        }
+
+        .comprarProdutoFormsContainer .form-control {
+            border: 1px solid #f70813;
+        }
+
+        .comprarProdutoFormsContainer select.form-control {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23f39b37' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+        }
+
+        .comprarProdutoFormsContainer button {
+            background-color: #f70813;
+        }
+
+        .comprarProdutoFormsContainer button:hover {
+            background-color: #c7351b;
+            transform: translateY(-2px);
+        }
+
+        .comprarProdutoFormsContainer .form-control:focus {
+            box-shadow: 0 0 5px rgba(247, 8, 19, 0.2);
+            outline: none;
+        }
+
+        .comprarProdutoFormsContainer .form-check-input {
+            border: 2px solid #f70813;
+        }
+
+        .comprarProdutoFormsContainer .form-check-input:checked {
+            background-color: #f70813;
+            border-color: #f70813;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-4 col-md-12 logo">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-12 text-cend">
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item menu">
+                                <a class="nav-link" href="contaSingup.html">Conta</a>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link"
+                                    href="https://www.linkedin.com/in/lu%C3%ADs-gustavo-neopomoceno-da-silva-49b616286"
+                                    target="_blank">
+                                    <img src="assets/linkedin.png" alt="Linkedin">
+                                </a>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link" href="https://www.instagram.com/luiss.neo/" target="_blank">
+                                    <img src="assets/instagram.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link" href="https://chat.whatsapp.com/BJyMw5vyl14JsTLe2oQ7a1"
+                                    target="_blank">
+                                    <img src="assets/whatsApp.png" alt="WhatsApp">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="comprarProdutoForms">
+            <h1>Preencha suas informações!🤗</h1>
+            <div class="comprarProdutoFormsContainer">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label for="inputEmail4">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group col-md-6 mb-4">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Sua senha"
+                                pattern=".{4,8}" required>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua, número" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="inputAddress2">Complemento (opcional)</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartamento, bloco, andar">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputState">Estado</label>
+                            <select id="inputState" class="form-control" required>
+                                <option value="" selected>Escolha...</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-4">
+                            <label for="inputZip">CEP</label>
+                            <input type="text" class="form-control" id="inputZip" pattern=".{8}" required>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="form-check">
+                                <label class="form-check-label" for="radioOption1">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption1"
+                                        value="option1" required>
+                                    Débito
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="radioOption2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption2"
+                                        value="option2">
+                                    Crédito
+                                </label>
+                            </div>
+                        </div>
+                        <div id="card-input-container" style="margin-top: 20px; margin-bottom: 20px;"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Comprar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="successPopup" class="popup" style="display: none;">
+        <h3>Compra realizada com sucesso! 🎉</h3>
+        <p>Obrigado por comprar conosco!</p>
+        <button onclick="window.location.href='index.html'" class="popup-button">OK</button>
+    </div>
+    <div id="overlay" class="overlay" style="display: none;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="partner-logos">
+                <div class="logo-wrapper">
+                    <a href="https://www.nvidia.com/pt-br/" target="_blank" class="partner-link">
+                        <img src="assets/nvidia.png" alt="Logo da Nvidia" class="partner-logo nvidia">
+                    </a>
+                </div>
+                <div class="logo-wrapper">
+                    <a href="https://www.amd.com/pt/support/download/drivers.html" target="_blank" class="partner-link">
+                        <img src="assets/amd.png" alt="Logo da AMD" class="partner-logo amd">
+                    </a>
+                </div>
+                <div class="logo-wrapper">
+                    <a href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank"
+                        class="partner-link">
+                        <img src="assets/intel.png" alt="Logo da Intel" class="partner-logo intel">
+                    </a>
+                </div>
+                <div class="logo-wrapper">
+                    <a href="https://www.amd.com/pt/products/processors/desktops/ryzen.html" target="_blank"
+                        class="partner-link">
+                        <img src="assets/ryzen.png" alt="Logo da Ryzen" class="partner-logo ryzen">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+@media (max-width: 768px) {
+    .produtoDestaque .produtoDestaqueConteudo {
+        flex-direction: column-reverse;
+        padding: 0 15px;
+    }
+    
+    .produtoDestaque .produtoDestaqueInformacoes,
+    .produtoDestaque .produtoDestaqueProduto {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .produtoDestaque .produtoDestaqueDetalhes {
+        flex-direction: column;
+    }
+    
+    .produtoDestaque .produtoDestaqueDetalhes p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .produtoDestaque1 .produtoDestaqueConteudo1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produtoDestaque1 .produtoDestaqueDetalhes1 {
+        max-width: 100%;
+    }
+
+    .produtoDestaque1 .produtoDestaqueDetalhesConteudo1 h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtoDestaque1 .produtoDestaqueConteudo1 {
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 1.5rem;
+    }
+    
+    .produtoDestaque1 .produtoDestaqueInformacoes1,
+    .produtoDestaque1 .produtoDestaqueProduto1,
+    .produtoDestaque1 .produtoDestaqueDetalhes1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .produtoDestaque1 .produtoDestaqueProduto1 h3 {
+        font-size: 2rem;
+    }
+
+    .produtoDestaque1 .produtoDestaqueDetalhesConteudo1 h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    header .menu a {
+        font-size: 16px;
+    }
+
+    header .menu img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    header .row {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    header .logo {
+        flex: 0 0 auto;
+        margin-right: 2rem;
+    }
+    
+    header .text-cend {
+        flex: 1;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    header .container {
+        padding: 0 1rem;
+    }
+    
+    header .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    header .logo {
+        justify-content: center;
+    }
+    
+    header .text-cend {
+        justify-content: center;
+    }
+    
+    header .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header .logo {
+        justify-content: center;
+    }
+
+    header .text-cend {
+        text-align: center;
+    }
+
+    header .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    header .menu a {
+        font-size: 14px;
+        padding: 0.25rem;
+    }
+
+    header .menu img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Banner Responsive Styles */
+@media (max-width: 1200px) {
+    .banner .carousel-item {
+        height: 500px;
+    }
+    
+    .banner h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .carousel-item {
+        height: 400px;
+    }
+    
+    .banner h2 {
+        font-size: 1.8rem;
+        top: 8%;
+    }
+    
+    .banner .carousel-control-prev,
+    .banner .carousel-control-next {
+        width: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .carousel-item {
+        height: 300px;
+    }
+    
+    .banner h2 {
+        font-size: 1.5rem;
+        top: 10%;
+    }
+    
+    .banner .carousel-indicators {
+        bottom: 20px;
+    }
+    
+    .banner .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Acervo Produtos Responsive */
+@media (max-width: 1200px) {
+    .acervoProdutos {
+        padding: 3rem 1.5rem;
+    }
+
+    .acervoProdutos h2 {
+        font-size: 2.2rem;
+    }
+
+    .acervoProdutos .produtos {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .acervoProdutos {
+        padding: 2.5rem 1rem;
+    }
+
+    .acervoProdutos h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .acervoProdutos .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .acervoProdutos .produto-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .acervoProdutos {
+        padding: 2rem 0.8rem;
+    }
+
+    .acervoProdutos h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .acervoProdutos .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .acervoProdutos .produto-card {
+        padding: 0.8rem;
+    }
+}
+
+/* Banner2 Responsive */
+@media (max-width: 1200px) {
+    .banner2 {
+        padding: 3rem 1.5rem;
+    }
+
+    .banner2 h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner2-image {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner2 {
+        padding: 2.5rem 1rem;
+        min-height: 500px;
+    }
+
+    .banner2 h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .banner2-image {
+        max-width: 90%;
+    }
+
+    .icon-planet,
+    .icon-alien,
+    .icon-star {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner2 {
+        padding: 2rem 0.8rem;
+        min-height: 400px;
+    }
+
+    .banner2 h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .banner2-image {
+        max-width: 95%;
+    }
+
+    .icon-planet,
+    .icon-alien,
+    .icon-star {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 1200px) {
+    .footer-content {
+        padding: 0 1.5rem;
+    }
+
+    .partner-logos {
+        gap: 1.5rem;
+    }
+
+    .logo-wrapper {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 0;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .partner-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .logo-wrapper {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer-content {
+        padding: 0 0.8rem;
+    }
+
+    .partner-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .logo-wrapper {
+        padding: 0.6rem;
+    }
+
+    .partner-logo {
+        max-width: 80%;
+    }
+}
