@@ -613,9 +613,12 @@ footer {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -625,9 +628,11 @@ footer {
     0% {
         opacity: 0.2;
     }
+
     50% {
         opacity: 0.3;
     }
+
     100% {
         opacity: 0.2;
     }
