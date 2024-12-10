@@ -521,18 +521,6 @@ footer {
     overflow: hidden;
 }
 
-.banner2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../../assets/stars-pattern.png') repeat;
-    opacity: 0.2;
-    animation: twinkle 3s infinite linear;
-}
-
 .banner2-content {
     position: relative;
     max-width: 1200px;
@@ -569,73 +557,6 @@ footer {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);
-}
-
-.floating-icons {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.icon-planet,
-.icon-alien,
-.icon-star {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-}
-
-.icon-planet {
-    top: 10%;
-    right: 5%;
-    background-image: url('../../assets/planet-icon.png');
-    animation: float 4s infinite ease-in-out;
-}
-
-.icon-alien {
-    top: 20%;
-    left: 5%;
-    background-image: url('../../assets/alien-icon.png');
-    animation: float 5s infinite ease-in-out;
-}
-
-.icon-star {
-    bottom: 15%;
-    right: 15%;
-    background-image: url('../../assets/star-icon.png');
-    animation: float 3s infinite ease-in-out;
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-@keyframes twinkle {
-    0% {
-        opacity: 0.2;
-    }
-
-    50% {
-        opacity: 0.3;
-    }
-
-    100% {
-        opacity: 0.2;
-    }
 }
 
 /* Fim do banner2 */
